@@ -81,7 +81,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">ASSADIG</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">perline</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -94,7 +94,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href="/home" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -106,7 +106,7 @@
               <span class="menu-header-text">Kategori</span>
             </li>
             <li class="menu-item">
-              <a href="kategori" class="menu-link">
+              <a href="{{ route('kategori.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Kategori</div>
               </a>
@@ -115,7 +115,7 @@
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Pengarang</span></li>
             <!-- Cards -->
            <li class="menu-item">
-              <a href="pengarang" class="menu-link">
+              <a href="{{ route('pengarang.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Pengarang</div>
               </a>
@@ -127,7 +127,7 @@
             
             <!-- Tables -->
             <li class="menu-item">
-              <a href="buku" class="menu-link">
+              <a href="{{ route('buku.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Buku</div>
               </a>
@@ -135,7 +135,7 @@
             <!-- Misc -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
             <li class="menu-item">
-              <a href="peminjaman" class="menu-link">
+              <a href="{{ route('peminjaman.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Peminjaman</div>
               </a>

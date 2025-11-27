@@ -63,7 +63,7 @@ body {
 
         <div class="mb-3">
             <div class="label">Kategori</div>
-            <div class="value">{{ $buku->kategoriBuku->nama_kategori ?? '-' }}</div>
+            <div class="value">{{ $buku->kategori->nama_kategori ?? '-' }}</div>
         </div>
 
         <div class="mb-3">

@@ -55,8 +55,8 @@
                 <div id="produk-wrapper">
                     <div class="row produk-item mb-3">
                         <div class="col-md-12">
-                            <label for="pengarang_id" class="form-label">Pengarang</label>
-                            <select name="pengarang_id[]" id="pengarang_id" class="form-select js-multiple form-control" multiple>
+                            <label for="pengarang_id" class="form-label">Pengarang </label>
+                                <select name="pengarang_id[]" id="pengarang_id" class="form-select" jsmultiple multiple>
                                 <option value="">-- Pilih Pengarang --</option>
                                 @foreach ($pengarangs as $p)
                                     <option value="{{ $p->id }}">{{ $p->nama_pengarang  }}</option>
@@ -96,3 +96,21 @@
     </div>
 </div>
 @endsection
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const selects = document.querySelectorAll("select[jsmultiple]");
+
+    selects.forEach(sel => {
+        new Choices(sel, {
+            removeItemButton: true,
+            searchPlaceholderValue: "Cari pengarang...",
+            placeholder: true,
+        });
+    });
+});
+</script>
+@endpush

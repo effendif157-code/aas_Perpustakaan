@@ -1,7 +1,7 @@
 <footer class="content-footer footer bg-footer-theme">
   <style>
     footer.content-footer {
-    background: linear-gradient(135deg, #105fd6, #2b89ff)  !important; /* biru bootstrap */
+    background: linear-gradient(135deg, #2463c2, #2b89ff)  !important; /* biru bootstrap */
     color: white !important;
 }
 

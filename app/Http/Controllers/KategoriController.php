@@ -22,7 +22,7 @@ class KategoriController extends Controller
     {
         //validate form
         $validated = $request->validate([
-            'nama_kategori' => 'required|min:5',
+            'nama_kategori' => 'required|min:4|unique:kategoris,nama_kategori',
         ]);
 
         $kategori                = new Kategori();
@@ -47,7 +47,7 @@ class KategoriController extends Controller
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
-            'nama_kategori' => 'required|min:5',
+            'nama_kategori' => 'required|min:4|unique:kategoris,nama_kategori,' . $id,
         ]);
 
         $kategori                = Kategori::findOrFail($id);
