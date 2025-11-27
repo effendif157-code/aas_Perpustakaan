@@ -3,8 +3,10 @@
 @section('content')
 <div class="container mt-4">
     <div class="card shadow-sm border-0">
-        <div class="card-header bg-light d-flex justify-content-between align-items-center">
-            <h5 class="mb-0">PENGARANG</h5>
+        <div class="card-header  d-flex justify-content-between align-items-center" style="background: #1e3a8a">
+            <div class="float-start">
+                     Pengarang
+                    </div>
             <a href="{{ route('pengarang.create') }}" class="btn btn-primary btn-sm">Tambah Data</a>
         </div>
 

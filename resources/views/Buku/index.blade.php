@@ -1,12 +1,18 @@
 @extends('layouts.dahsboard')
 
 @section('content')
-    <div class="card mt-4">
-        <div class="card-header bg-light d-flex justify-content-between align-items-center">
-            <h5 class="card-header">Daftar Buku</h5>
-            <a href="{{ route('buku.create') }}" class="btn btn-primary ">Tambah Data</a>
-
-        </div>
+    <div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="float-start">
+                     Buku
+                    </div>
+                    <div class="float-end">
+                        <a href="{{ route('buku.create') }}" class="btn btn-sm btn-outline-primary">Tambah Data</a>
+                    </div>
+                </div>
         <div class="table-responsive text-nowrap">
             <table class="table">
                 <thead>
@@ -60,6 +66,10 @@
                 </tbody>
             </table>
         </div>
+       </div>
+      </div>
+    </div>
+    </div>
     </div>
 
 

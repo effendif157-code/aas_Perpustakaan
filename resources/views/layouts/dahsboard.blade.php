@@ -21,6 +21,37 @@
   data-template="vertical-menu-template-free"
 >
   <head>
+    <style>
+      /* ===========================
+   BACKGROUND UTAMA BIRU
+   =========================== */
+
+body,
+.layout-wrapper,
+.layout-content-navbar,
+.content-wrapper {
+    background: linear-gradient(135deg, #0b5ed7, #2b89ff) !important;
+    background-attachment: fixed;
+}
+
+/* Membuat card & konten tetap putih agar kontras */
+.card,
+.navbar,
+.footer,
+.layout-navbar {
+    background: #ffffff !important;
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+/* Sidebar juga bisa kamu ubah jika mau */
+.layout-menu {
+    background-color: #003f8c !important;
+}
+
+    </style>
     <meta charset="utf-8" />
     <meta
       name="viewport"

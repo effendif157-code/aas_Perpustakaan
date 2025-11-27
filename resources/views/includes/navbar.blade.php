@@ -1,3 +1,103 @@
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+          </head>
+          <style>
+            /* ====== GLOBAL STYLE ====== */
+                body {
+                    background: #f2f4f8;
+                    font-family: "Nunito", sans-serif;
+                }
+
+                .navbar {
+                    background: white;
+                    border-bottom: 2px solid #e5e9f0;
+                }
+
+                .navbar-brand {
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    color: #1e40af !important;
+                }
+
+                .nav-link {
+                    font-weight: 600;
+                    color: #374151 !important;
+                }
+
+                .nav-link:hover {
+                    color: #1e40af !important;
+                }
+
+                /* ====== DROPDOWN STYLE ====== */
+                .dropdown-menu {
+                    border-radius: 10px;
+                    padding: 10px 0;
+                }
+
+                .dropdown-item {
+                    font-weight: 500;
+                }
+
+                .dropdown-item:hover {
+                    background-color: #e5e7eb;
+                }
+
+                /* ====== MAIN CONTENT ====== */
+                main {
+                    padding-top: 25px;
+                }
+
+                /* ====== CARD STYLE ====== */
+                .card {
+                    border: none;
+                    border-radius: 16px;
+                    box-shadow: 0px 4px 12px rgba(0,0,0,0.07);
+                }
+
+                .card-header {
+                    border-radius: 16px 16px 0 0 !important;
+                    background: #1e40af;
+                    color: white;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                /* ====== SELECT2 CUSTOM ====== */
+                .select2-container--default .select2-selection--multiple {
+                    border-radius: 12px;
+                    border: 1px solid #a1a1aa;
+                    padding: 6px;
+                    min-height: 45px;
+                }
+
+                .select2-container--default .select2-selection--multiple .select2-selection__choice {
+                    background-color: #1e40af;
+                    border-radius: 8px;
+                    padding: 4px 10px;
+                    font-size: 0.85rem;
+                    color: white;
+                }
+
+                /* ====== BUTTON STYLE ====== */
+                .btn-primary {
+                    background: #1e40af;
+                    border: none;
+                    border-radius: 10px;
+                    font-weight: 600;
+                }
+
+                .btn-primary:hover {
+                    background: #1d4ed8;
+                }
+
+          </style>
+          <body>
+            
           <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
@@ -103,3 +203,6 @@
               </ul>
             </div>
           </nav>
+          </body>
+          </html>
+          
